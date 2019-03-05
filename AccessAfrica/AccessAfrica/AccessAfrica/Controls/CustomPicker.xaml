@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Controls.CustomPicker">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame Style="{DynamicResource ControlFrame}">
+            <Grid ColumnSpacing="13">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Aspect="AspectFit" Grid.Column="0" HorizontalOptions="Start" HeightRequest="15.6" WidthRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="Flag" Tapped="Flag_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Picker 
+                    x:Name="flagPicker"
+                Grid.Column ="1"
+                Grid.ColumnSpan="2"
+                VerticalOptions="Center"    
+                Title="Canada"
+                Style="{DynamicResource PickerStyle}"
+                HorizontalOptions="FillAndExpand"
+                />
+                <Image Aspect="AspectFit" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="4" WidthRequest="8"/>
+            </Grid>
+        </Frame>
+        <Grid Style="{DynamicResource TitlePositionStyle}">
+            <Label Text="What country are you sending to?"  Style="{DynamicResource ControlTitle}"/>
+        </Grid>
+    </Grid>
+</ContentView>

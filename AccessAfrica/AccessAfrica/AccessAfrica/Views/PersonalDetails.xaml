@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    Title="Personal Details"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Custom="clr-namespace:AccessAfrica.Controls"
+    x:Class="AccessAfrica.Views.PersonalDetails">
+    <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="40" Padding="30" BackgroundColor="#FFFFFF">
+        <StackLayout>
+            <Custom:CustomEntry/>
+        </StackLayout>
+        <StackLayout>
+            <Custom:CustomEntry/>
+        </StackLayout>
+        <StackLayout>
+            <Custom:CustomEntry/>
+        </StackLayout>
+        <StackLayout>
+            <Custom:CustomEntry/>
+        </StackLayout>
+        <Button  Text="Proceed" />
+    </StackLayout>
+    <!--<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
+        <StackLayout Padding="30,30,30,20" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <StackLayout Padding="0,0,0,5">
+                <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
+                    <StackLayout>
+                        <Entry Placeholder="Input BVN"  FontSize="19"  TextColor="#000000"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                    <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                        <Label Text="BVN" FontSize="14" BackgroundColor="White" TextColor="#363636" />
+                    </StackLayout>
+                </StackLayout>
+                <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                    <StackLayout>
+                        <Entry Placeholder="Name" FontSize="19"  PlaceholderColor="#c5c5c5" TextColor="#000000"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                    <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                        <Label Text="Name" FontSize="14"  TextColor="#363636" />
+                    </StackLayout>
+                </StackLayout>
+                <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                    <StackLayout>
+                        <Entry Placeholder="Email Adddress" FontSize="19" TextColor="#000000"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                    <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                        <Label Text="Email Address" FontSize="14"  TextColor="#363636" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button  Text="Proceed" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>-->
+</ContentPage>

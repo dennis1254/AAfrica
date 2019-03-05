@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.FontStyles">
+    <OnPlatform x:Key="EffraBold"
+    x:TypeArguments="x:String"
+    Android="Effra_Std_Bd.otf#Effra-Bold"
+    iOS="Effra-Bold" />
+
+    <OnPlatform x:Key="EffraRegular"
+    x:TypeArguments="x:String"
+    Android="Effra_Std_Rg.otf#Effra"
+    iOS="Effra" />
+
+    <OnPlatform x:Key="EffraMedium"
+    x:TypeArguments="x:String"
+    Android="Effra_Std_Md.otf#Effra-Medium"
+    iOS="Effra-Medium" />
+
+    <OnPlatform x:Key="FontSize"  
+                x:TypeArguments="x:Double"
+                iOS="12"
+                Android="14"/>
+
+    <OnPlatform x:Key="ControlPadding"
+                x:TypeArguments="Thickness"
+                iOS="15,27,15,27"
+                Android="15,23,15,23"/>
+
+    <OnPlatform x:Key="EntryFontSize"
+                x:TypeArguments="x:Double"
+                iOS="12"
+                Android="17"/>
+
+    <OnPlatform x:Key="PickerFontsize"
+                x:TypeArguments="x:Double"
+                iOS="15"
+                Android="17"/>
+
+    <OnPlatform x:Key="ControlTileMargin"
+                x:TypeArguments="Thickness"
+                iOS="15,-6,0,0"
+                Android="15,-10,0,0"/>
+
+    <OnPlatform x:Key="fontSizeConfirmationMainLabel"
+                x:TypeArguments="x:Double"
+                iOS="24"
+                Android="40"/>
+    <OnPlatform x:Key="fontSizeConfirmationSubLabel"
+                x:TypeArguments="x:Double"
+                iOS="15"
+                Android="25"/>
+
+    <OnPlatform x:Key="ButtonPadding"
+                x:TypeArguments="Thickness"
+                iOS="18.8"
+                Android="25"/>
+
+    <OnPlatform x:Key="RadioButtonTextSize"
+                x:TypeArguments="x:Double"
+                iOS="12"
+                Android="19"/>
+    <!-- Font styles -->
+
+    <Style TargetType="Label">
+        <Setter Property="FontSize" Value="{Binding FontSize}"/>
+    </Style>
+
+    <Style x:Key="customButtonFrame" TargetType="Frame">
+        <Setter Property="Padding" Value="{DynamicResource ButtonPadding}"/>
+    </Style>
+
+    <Style x:Key="MainLabel"
+    TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource EffraBold}" />
+        <Setter Property="FontSize" Value="{DynamicResource fontSizeConfirmationMainLabel}"/>
+    </Style>
+
+    <Style x:Key="SubLabel"
+    TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource EffraRegular}" />
+        <Setter Property="FontSize" Value="{DynamicResource fontSizeConfirmationSubLabel}" />
+    </Style>
+
+    <Style x:Key="ControlTitle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource ControlTitle}"/>
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}"/>
+        <Setter Property="FontFamily" Value="{StaticResource EffraRegular}"/>
+        <Setter Property="FontAttributes" Value="None"/>
+    </Style>
+
+    <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="FontFamily" Value="{StaticResource EffraRegular}"/>
+        <Setter Property="FontSize" Value="{DynamicResource EntryFontSize}"/>
+        <Setter Property="TextColor" Value="{DynamicResource InputColor}"/>
+        <Setter Property="PlaceholderColor" Value="{DynamicResource PlaceholderColor}"/>
+    </Style>
+
+    <Style x:Key="ControlFrame" TargetType="Frame">
+        <Setter Property="Padding" Value="{DynamicResource ControlPadding}"/>
+        <Setter Property="OutlineColor" Value="{DynamicResource BorderColor}"/>
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="HasShadow" Value="False"/>
+    </Style>
+
+    <Style x:Key="PickerStyle" TargetType="Picker">
+        <Setter Property="FontFamily" Value="{DynamicResource EffraRegular}"/>
+        <Setter Property="FontSize" Value="{DynamicResource PickerFontsize}"/>
+    </Style>
+    <Style x:Key="TitlePositionStyle" TargetType="Grid">
+        <Setter Property="Margin" Value="{DynamicResource ControlTileMargin}"/>
+        <Setter Property="Padding" Value="6,0,6,0"/>
+        <Setter Property="VerticalOptions" Value="Start"/>
+        <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+        <Setter Property="BackgroundColor" Value="White"/>
+    </Style>
+
+    <Style x:Key="RadioText" TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource EffraRegular}"/>
+        <Setter Property="FontSize" Value="{DynamicResource RadioButtonTextSize}"/>
+        <Setter Property="TextColor" Value="{DynamicResource AccessDarkBlue}"/>
+    </Style>
+    <Style x:Key="ButtonStyle" TargetType="Button"> 
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColorAccessOrange}"/>
+        <Setter Property="TextColor" Value="#FFFFFF"/>
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="Padding" Value="20"/>
+    </Style>
+
+</ResourceDictionary>

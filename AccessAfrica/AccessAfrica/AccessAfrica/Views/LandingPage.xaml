@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="AccessAfrica.Views.LandingPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  Here will be CarouselView  -->
+        <ContentView Grid.Row="0" BackgroundColor="#003883" Padding="0,0,0,20" >
+            <controls:CarouselViewControl ItemsSource="{Binding Slides}"
+                                          ShowIndicators="True"
+                                          ShowArrows="False"
+                                          IndicatorsTintColor="#000000"
+                                          CurrentPageIndicatorTintColor="#FFFFFF"
+                                          PositionSelected="Carousel_PositionSelected"
+                                          x:Name="carousel">
+                <controls:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <ContentView Grid.Row="0" Padding="60,30,60,0">
+                                <Image Source="{Binding Image}" Aspect="AspectFit" />
+                            </ContentView>
+
+                            <ContentView Grid.Row="1" Padding="26.25,0,26.25,94.5">
+                                <Label Text="{Binding Description}"
+                                       TextColor="#FFFFFF"
+                                       FontSize="28"
+                                       HorizontalTextAlignment="Start" />
+                            </ContentView>
+                        </Grid>
+                    </DataTemplate>
+                </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>
+        </ContentView>
+
+
+        <!--  Buttons and label  -->
+        <Grid Grid.Row="0" Padding="45,20,45,20"  VerticalOptions="End"  HorizontalOptions="Fill" BackgroundColor="#80002e6c" >
+            <Label Grid.Column="0" Text="Skip" HorizontalOptions="Start" VerticalOptions="Center" TextColor="#FFFFFF" FontSize="18">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Skip_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="NextKey" Text="Next" Grid.Column="1" HorizontalOptions="End"  VerticalOptions="Center" TextColor="#FFFFFF" FontSize="18">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Button_Clicked"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </Grid> 
+</ContentPage>

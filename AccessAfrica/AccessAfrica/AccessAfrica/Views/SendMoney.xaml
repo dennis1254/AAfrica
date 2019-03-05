@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:AccessAfrica.Custom"
+             x:Class="AccessAfrica.Views.SendMoney">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
+        <StackLayout Padding="30,30,30,5" BackgroundColor="#FFFFFF" VerticalOptions="StartAndExpand" Orientation="Vertical">
+            <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
+                <StackLayout>
+                    <Grid>
+                        <Grid HorizontalOptions="StartAndExpand"
+                              WidthRequest="25"
+                              HeightRequest="25"
+                             Grid.Column="0">
+                            <Image                       
+                            x:Name="imageSource2">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                        <Image Source="download.png"
+                            Grid.Column="2"
+                            HeightRequest="25"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            WidthRequest="25"
+                            />
+                        <custom:CustomPicker SelectedIndexChanged="FlagPicker_SelectedIndexChanged"
+                            x:Name="flagPicker"
+                            Title="Select country"
+                            BackgroundColor="Transparent"
+                                Grid.Column="1"
+                                Grid.ColumnSpan="2"
+                                FontSize="16">
+                        </custom:CustomPicker>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="22"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-99,0,5" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="What country are you sending to?" FontSize="14" BackgroundColor="White" TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <BoxView HeightRequest="1" BackgroundColor="#c5c5c5" VerticalOptions="Start" Margin="0,50,0,0"/>
+        <StackLayout Padding="30,0,30,0" Margin="0,-17,0,0">
+            <StackLayout  BackgroundColor="#ffffff" Padding="5,0,5,0" HorizontalOptions="End">
+                <Label  Text="RATE: USD 1 TO NGN 200" FontSize="12" TextColor="#363636"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout  Padding="30,0,30,15" BackgroundColor="#FFFFFF" VerticalOptions="StartAndExpand">
+            
+            <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Input transaction amount"  FontSize="14"  PlaceholderColor="#c5c5c5" TextColor="#000000" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+
+                    <Grid VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                        <Grid Grid.Column="0"
+                              WidthRequest="15"
+                              HeightRequest="20"
+                              HorizontalOptions="StartAndExpand">
+                            <Image x:Name="imageSource"/>
+                        </Grid>
+                        <Image  Source="download.png"
+                            Grid.Column="0"
+                            HeightRequest="25"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="Center"
+                            WidthRequest="25"
+                            />
+                        <Picker x:Name="picker"
+                            FontSize="16" 
+                            BackgroundColor="Transparent"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="1"
+                                HorizontalOptions="FillAndExpand" 
+                                SelectedIndexChanged="Picker_SelectedIndexChanged"
+                                >
+                        </Picker>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-99,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="You send" FontSize="14"  TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+            <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Input transaction amount"   FontSize="14"  PlaceholderColor="#c5c5c5" TextColor="#000000" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                    <Grid VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                        <Grid Grid.Column="0"
+                              WidthRequest="15"
+                              HeightRequest="20"
+                              HorizontalOptions="StartAndExpand">
+                            <Image x:Name="imageSource3"/>
+                        </Grid>
+                        <Image Source="download.png"
+                            Grid.Column="0"
+                            HeightRequest="25"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="Center"
+                            WidthRequest="25"
+                            />
+                        <Picker x:Name="picker3"
+                            FontSize="16" 
+                            BackgroundColor="Transparent"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="1"
+                                HorizontalOptions="FillAndExpand" 
+                                SelectedIndexChanged="Picker3_SelectedIndexChanged"
+                                >
+                        </Picker>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-99,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="Receiver gets" FontSize="14"  TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout  Padding="30,5,30,0" BackgroundColor="#FFFFFF" VerticalOptions="StartAndExpand">
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Receiver bears charges" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="#363636"/>
+                <Frame CornerRadius="20" HasShadow="False" Padding="6,0,10,0" BackgroundColor="#003883">
+                    <Switch HeightRequest="35" WidthRequest="50" HorizontalOptions="End" VerticalOptions="Center" OnColor="#003883" />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="30,25,30,25" BackgroundColor="#80ffdd8d">
+            <Label Text="Transfer Charges (Included)" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="#FF001e5a"/>
+            <Label Text="CAD 12" HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="#FF001e5a"/>
+        </StackLayout>
+        <StackLayout Padding="30,0,30,15" BackgroundColor="#FFFFFF">
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button  Text="Proceed" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

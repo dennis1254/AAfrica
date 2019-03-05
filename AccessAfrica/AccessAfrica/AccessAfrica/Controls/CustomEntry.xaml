@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Controls.CustomEntry">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame Style="{DynamicResource ControlFrame}" x:Name="mainFrame">
+            <Entry  
+                x:Name="mainEntry"
+                VerticalOptions="Center"
+                Style="{DynamicResource EntryStyle}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Placeholder="Input transaction amount"/>
+        </Frame>
+        <Grid Style="{DynamicResource TitlePositionStyle}">
+            <Label Text="Name"  Style="{DynamicResource ControlTitle}"/>
+        </Grid>
+    </Grid>
+</ContentView>

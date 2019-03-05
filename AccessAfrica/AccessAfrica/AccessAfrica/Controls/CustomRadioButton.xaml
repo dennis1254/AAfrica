@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Controls.CustomRadioButton">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame Style="{DynamicResource ControlFrame}">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="12">
+                    <Label Text="Account" Style="{DynamicResource RadioText}" HorizontalOptions="Start"/>
+                    <Image HeightRequest="14" WidthRequest="14" Aspect="AspectFit" HorizontalOptions="Start"/>
+                </StackLayout>
+                <BoxView Grid.Column="1" Color="{DynamicResource BorderColor}" WidthRequest="1" VerticalOptions="FillAndExpand" Margin="0,-13,0,-13"/>
+                <StackLayout Grid.Column="2" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="12">
+                    <Label Text="Code" Style="{DynamicResource RadioText}"  HorizontalOptions="Start" TextColor="#707070"/>
+                    <Image HeightRequest="14" WidthRequest="14" Aspect="AspectFit" HorizontalOptions="Start" />
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <Grid Style="{DynamicResource TitlePositionStyle}">
+            <Label Text="Send to beneficiary via"  Style="{DynamicResource ControlTitle}"/>
+        </Grid>
+    </Grid>
+</ContentView>

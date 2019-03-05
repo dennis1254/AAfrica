@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Controls.EntryAndPickerControl">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame Style="{DynamicResource ControlFrame}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry 
+                Grid.Column ="0"   
+                VerticalOptions="Center"
+                Style="{DynamicResource EntryStyle}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Placeholder="Input transaction amount"/>
+                <Grid Grid.Column="1" HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Aspect="AspectFit" Grid.Column="0" VerticalOptions="Center" WidthRequest="18" HeightRequest="9.5" />
+                    <Image Aspect="AspectFit" Grid.Column="2" VerticalOptions="Center" HeightRequest="4" WidthRequest="8">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="arrow" Tapped="Arrow_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Picker VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Grid.Column="1"  x:Name="controlPicker" Style="{DynamicResource PickerStyle}"/>
+                </Grid>
+            </Grid>
+        </Frame>
+        <Grid  Style="{DynamicResource TitlePositionStyle}">
+            <Label Text="You send"  Style="{DynamicResource ControlTitle}"/>
+        </Grid>
+    </Grid>
+</ContentView>

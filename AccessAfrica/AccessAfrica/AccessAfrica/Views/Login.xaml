@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Views.Login">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
+        <StackLayout BackgroundColor="#001e5a" Padding="5"/>
+        <StackLayout Padding="30,0,30,5" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <Grid HorizontalOptions="EndAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="57"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="57"/>
+                </Grid.ColumnDefinitions>   
+                <Frame CornerRadius="30" OutlineColor="#001e5a">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <Label Text="Welcome Back,"  FontSize="32" FontAttributes="Bold"          
+                HorizontalOptions="StartAndExpand" TextColor="#001e5a"
+                   />
+            <Label Margin="0,0,0,15" FontSize="20" Text="Sign in to continue banking without limits" TextColor="#001e5a"/>
+
+            <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
+                <StackLayout>
+                    <Entry Placeholder="Input Username"  FontSize="19"  TextColor="#000000"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="Username" FontSize="14" BackgroundColor="White" TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+            <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                <StackLayout>
+                    <Entry Placeholder="Input Password" IsPassword="True" FontSize="19"  PlaceholderColor="#c5c5c5" TextColor="#000000"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="Password" FontSize="14"  TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Forgot Password?" HorizontalOptions="EndAndExpand" FontSize="16"  TextColor="#003883">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+        <BoxView HeightRequest="1" BackgroundColor="#c5c5c5"/>
+        <StackLayout  Padding="30,5,30,5" BackgroundColor="#FFFFFF" VerticalOptions="StartAndExpand">
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Remember Me" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="#363636"/>
+                <Frame CornerRadius="20" HasShadow="False" Padding="6,0,10,0" BackgroundColor="#003883">
+                    <Switch HeightRequest="35" WidthRequest="50" HorizontalOptions="End" VerticalOptions="Center" OnColor="#003883" />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <BoxView HeightRequest="1" BackgroundColor="#c5c5c5"/>
+        <StackLayout Padding="30,10,30,15" BackgroundColor="#FFFFFF">
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button  Text="Proceed" Clicked="Button_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

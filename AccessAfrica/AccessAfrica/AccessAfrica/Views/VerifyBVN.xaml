@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccessAfrica.Views.VerifyBVN">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
+        <StackLayout BackgroundColor="#001e5a" Padding="5"/>
+        <StackLayout Padding="30,0,30,5" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <Grid HorizontalOptions="EndAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="57"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="57"/>
+                </Grid.ColumnDefinitions>
+                <Frame CornerRadius="30" OutlineColor="#001e5a">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <Label Text="Verify BVN"  FontSize="32" FontAttributes="Bold"          
+                HorizontalOptions="StartAndExpand" TextColor="#001e5a"
+                   />
+            <Label Margin="0,0,0,15" FontSize="20" Text="Sign up with your BVN" TextColor="#001e5a"/>
+
+            <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
+                <StackLayout>
+                    <Entry Placeholder="BVN"  FontSize="19"  TextColor="#000000"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="BVN" FontSize="14" BackgroundColor="White" TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+            <Frame Margin="0,15,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5"  BackgroundColor="#FFFFFF">
+                <StackLayout>
+                    <Entry Placeholder="Input OTP" FontSize="19" TextColor="#000000"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="15"  Margin="0,-102,0,60" HorizontalOptions="Start" >
+                <StackLayout BackgroundColor="#FFFFFF" Padding="3,0,3,0">
+                    <Label Text="OTP" FontSize="14"  TextColor="#363636" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Padding="0,0,0,0">
+            <Label Text="A one time password has been" HorizontalOptions="CenterAndExpand" FontSize="15" TextColor="#363636" />
+            <Label Text="Sent to +234813*****35" HorizontalOptions="CenterAndExpand" FontSize="15" TextColor="#363636"/>
+        </StackLayout>
+        <StackLayout  Padding="0,5,0,0">
+            <Label Text="Resend OTP" HorizontalOptions="CenterAndExpand" TextColor="#001e5a" FontSize="16"/>
+        </StackLayout>
+        <StackLayout Padding="30,10,30,15" BackgroundColor="#FFFFFF">
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button  Text="Proceed" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
