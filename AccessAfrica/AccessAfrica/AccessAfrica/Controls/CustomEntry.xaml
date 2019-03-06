@@ -13,7 +13,7 @@
                 Placeholder="Input transaction amount"/>
         </Frame>
         <Grid Style="{DynamicResource TitlePositionStyle}">
-            <Label Text="Name"  Style="{DynamicResource ControlTitle}"/>
+            <Label x:Name="entryLabel" Text="Name"  Style="{DynamicResource ControlTitle}"/>
         </Grid>
     </Grid>
 </ContentView>

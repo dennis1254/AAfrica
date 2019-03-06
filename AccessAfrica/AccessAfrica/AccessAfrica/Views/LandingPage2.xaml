@@ -6,32 +6,22 @@
     <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="Fill">
         <Grid  >
             <Image Aspect="AspectFill" Source="Intro.png" VerticalOptions="Fill" HorizontalOptions="Fill"/>
-            <Grid Padding="90,0,0,100" VerticalOptions="Center" >
-                <Image Grid.Row="0" Aspect="AspectFit" Source="AccessAfrica" HorizontalOptions="Center" />
-                <Label Grid.Row="1" Text="Connect the world with Access bank" HorizontalTextAlignment="Center" HorizontalOptions="Center" TextColor="#FFFFFF" FontSize="20"/>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="182.5"/>
-                    <ColumnDefinition Width="190"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="58.5"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
+            <Grid Padding="0,0,0,100" VerticalOptions="Center" HorizontalOptions="Center">
+                <Image Grid.Row="0" Aspect="AspectFill" Source="AccessAfrica" HorizontalOptions="Fill" WidthRequest="185" HeightRequest="62"/>
+                <Label Grid.Row="1" WidthRequest="210"  Text="Connect the world with Access Bank" HorizontalTextAlignment="Center" HorizontalOptions="Fill" TextColor="#FFFFFF" FontSize="24" />
             </Grid>
             <Grid VerticalOptions="End" HorizontalOptions="Fill" ColumnSpacing="0">
                 <StackLayout Grid.Column="0" HorizontalOptions="Fill" BackgroundColor="#FF003883" Padding="0,20,0,20">
-                    <Label Text="Login"  VerticalOptions="Center" TextColor="#FFFFFF"  FontSize="20"  HorizontalOptions="Center" >
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                        </Label.GestureRecognizers>
-                    </Label>
+                    <Label Text="Login"  VerticalOptions="Center" TextColor="#FFFFFF" FontFamily="{DynamicResource MontserratRegular}"  FontSize="20"  HorizontalOptions="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </StackLayout.GestureRecognizers> 
                 </StackLayout>
                 <StackLayout  Grid.Column="1" HorizontalOptions="Fill" BackgroundColor="#FF001E5A" Padding="0,20,0,20">
-                    <Label Text="Signup" VerticalOptions="Center" TextColor="#FFFFFF"  FontSize="20" HorizontalOptions="Center">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
-                        </Label.GestureRecognizers>
-                    </Label>
+                    <Label Text="Signup" VerticalOptions="Center" TextColor="#FFFFFF" FontFamily="{DynamicResource MontserratRegular}"  FontSize="20" HorizontalOptions="Center"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

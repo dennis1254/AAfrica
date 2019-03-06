@@ -1,10 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage NavigationPage.BackButtonTitle="Back"
+<ContentPage NavigationPage.HasNavigationBar="False"
     Title="Personal Details"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Controls="clr-namespace:AccessAfrica.Controls"
              x:Class="AccessAfrica.Views.PersonalDetails2">
-    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
+    <StackLayout Orientation="Vertical">
+        <Controls:CustomNav/>
+        <StackLayout Orientation="Vertical"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="40" Padding="30" BackgroundColor="#FFFFFF">
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout VerticalOptions="StartAndExpand" Padding="0,10,0,0" Spacing="40">
+                    <Controls:CustomEntry IsEnabled="False" BackgroundColor="#F4F4F4"/>
+                    <Controls:CustomEntry/>
+                    <Controls:CustomEntry/>
+                    <Controls:CustomEntry/>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Proceed" Style="{DynamicResource ButtonStyle}" Clicked="Button_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+    <!--<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
         <StackLayout Padding="30,30,30,20" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
             <StackLayout Padding="0,0,0,5">
                 <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
@@ -52,5 +69,5 @@
                 <Button  Text="Proceed" Clicked="Button_Clicked"/>
             </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </StackLayout>-->
 </ContentPage>

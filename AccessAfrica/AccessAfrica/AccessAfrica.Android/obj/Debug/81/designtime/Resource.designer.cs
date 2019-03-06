@@ -4590,6 +4590,12 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
+			// aapt resource value: 0x7F010015
+			public const int Backbutton = 2130771989;
+			
+			// aapt resource value: 0x7F010007
+			public const int Cancelbutton = 2130771975;
+			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
 			
@@ -4608,14 +4614,14 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010014
-			public const int Down = 2130771988;
-			
-			// aapt resource value: 0x7F010007
-			public const int download = 2130771975;
+			// aapt resource value: 0x7F010016
+			public const int Down = 2130771990;
 			
 			// aapt resource value: 0x7F010008
-			public const int Ic_arrow_drop_down.png = 2130771976;
+			public const int download = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int Ic_arrow_drop_down.png = 2130771977;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -5148,17 +5154,17 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010009
-			public const int Image1st = 2130771977;
-			
 			// aapt resource value: 0x7F010010
-			public const int Image2nd = 2130771984;
+			public const int Image1st = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int Image3rd = 2130771985;
+			public const int Image2nd = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int Intro = 2130771986;
+			public const int Image3rd = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int Intro = 2130771987;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -5223,11 +5229,11 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
-			// aapt resource value: 0x7F010015
-			public const int Next = 2130771989;
+			// aapt resource value: 0x7F010017
+			public const int Next = 2130771991;
 			
-			// aapt resource value: 0x7F010013
-			public const int NGN = 2130771987;
+			// aapt resource value: 0x7F010014
+			public const int NGN = 2130771988;
 			
 			// aapt resource value: 0x7F090001
 			public const int notification_action_background = 2131296257;
@@ -5265,8 +5271,8 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010016
-			public const int Prev = 2130771990;
+			// aapt resource value: 0x7F010018
+			public const int Prev = 2130771992;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -5274,8 +5280,8 @@ namespace AccessAfrica.Droid
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010017
-			public const int Up = 2130771991;
+			// aapt resource value: 0x7F010019
+			public const int Up = 2130771993;
 			
 			static Drawable()
 			{

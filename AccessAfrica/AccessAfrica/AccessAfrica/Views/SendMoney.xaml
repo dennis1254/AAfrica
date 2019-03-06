@@ -2,7 +2,7 @@
 <ContentPage NavigationPage.HasNavigationBar="False"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:custom="clr-namespace:AccessAfrica.Custom"
+            
              x:Class="AccessAfrica.Views.SendMoney">
     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
         <StackLayout Padding="30,30,30,5" BackgroundColor="#FFFFFF" VerticalOptions="StartAndExpand" Orientation="Vertical">
@@ -27,14 +27,14 @@
                             VerticalOptions="Center"
                             WidthRequest="25"
                             />
-                        <custom:CustomPicker SelectedIndexChanged="FlagPicker_SelectedIndexChanged"
+                        <Picker SelectedIndexChanged="FlagPicker_SelectedIndexChanged"
                             x:Name="flagPicker"
                             Title="Select country"
                             BackgroundColor="Transparent"
                                 Grid.Column="1"
                                 Grid.ColumnSpan="2"
                                 FontSize="16">
-                        </custom:CustomPicker>
+                        </Picker>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="22"/>
                         </Grid.ColumnDefinitions>

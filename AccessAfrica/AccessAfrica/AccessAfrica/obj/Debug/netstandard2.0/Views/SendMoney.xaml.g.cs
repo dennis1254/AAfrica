@@ -20,7 +20,7 @@ namespace AccessAfrica.Views {
         private global::Xamarin.Forms.Image imageSource2;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::AccessAfrica.Custom.CustomPicker flagPicker;
+        private global::Xamarin.Forms.Picker flagPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image imageSource;
@@ -38,7 +38,7 @@ namespace AccessAfrica.Views {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SendMoney));
             imageSource2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "imageSource2");
-            flagPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::AccessAfrica.Custom.CustomPicker>(this, "flagPicker");
+            flagPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "flagPicker");
             imageSource = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "imageSource");
             picker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "picker");
             imageSource3 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "imageSource3");

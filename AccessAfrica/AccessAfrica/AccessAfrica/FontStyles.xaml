@@ -2,6 +2,16 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AccessAfrica.FontStyles">
+    <OnPlatform x:Key="MontserratBold"
+    x:TypeArguments="x:String"
+    Android="Montserrat-Bold.ttf"
+    iOS="Montserrat-Bold" />
+
+    <OnPlatform x:Key="MontserratRegular"
+    x:TypeArguments="x:String"
+    Android="Montserrat-Regular.ttf"
+    iOS="Montserrat-Regular" />
+
     <OnPlatform x:Key="EffraBold"
     x:TypeArguments="x:String"
     Android="Effra_Std_Bd.otf#Effra-Bold"
@@ -24,8 +34,8 @@
 
     <OnPlatform x:Key="ControlPadding"
                 x:TypeArguments="Thickness"
-                iOS="15,27,15,27"
-                Android="15,23,15,23"/>
+                iOS="15,22,15,22"
+                Android="15,18,15,18"/>
 
     <OnPlatform x:Key="EntryFontSize"
                 x:TypeArguments="x:Double"
@@ -124,7 +134,8 @@
         <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColorAccessOrange}"/>
         <Setter Property="TextColor" Value="#FFFFFF"/>
         <Setter Property="CornerRadius" Value="5"/>
-        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Padding" Value="15"/>
+        <Setter Property="FontSize" Value="18"/>
     </Style>
 
 </ResourceDictionary>

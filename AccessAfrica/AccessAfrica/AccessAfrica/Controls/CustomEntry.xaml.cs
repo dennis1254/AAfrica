@@ -12,6 +12,20 @@ namespace AccessAfrica.Controls
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CustomEntry : ContentView
     {
+
+        public string NewPlaceHolder
+        {
+            get => mainEntry.Placeholder;
+            set => mainEntry.Placeholder=value;
+        }
+
+        public string NewLabel
+        {
+            get => entryLabel.Text ;
+            set => entryLabel.Text = value;
+        }
+
+
         public CustomEntry()
         {
             InitializeComponent();

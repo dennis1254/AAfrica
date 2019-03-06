@@ -12,6 +12,7 @@ namespace AccessAfrica.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
+      
 		public Login ()
 		{
 			InitializeComponent ();
@@ -22,6 +23,9 @@ namespace AccessAfrica.Views
             await Navigation.PushAsync(new AlmostThere());
         }
 
-       
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

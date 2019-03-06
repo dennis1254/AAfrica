@@ -1,24 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage NavigationPage.HasNavigationBar="False"
     Title="Personal Details"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Custom="clr-namespace:AccessAfrica.Controls"
     x:Class="AccessAfrica.Views.PersonalDetails">
-    <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="40" Padding="30" BackgroundColor="#FFFFFF">
-        <StackLayout>
-            <Custom:CustomEntry/>
+    <StackLayout Orientation="Vertical">
+        <Custom:CustomNav BackTapped="CustomNav_BackTapped"/>
+        <StackLayout Orientation="Vertical"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="40" Padding="30" BackgroundColor="#FFFFFF">
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout VerticalOptions="StartAndExpand" Padding="0,10,0,0" Spacing="40">
+                    <Custom:CustomEntry />
+                    <Custom:CustomEntry/>
+                    <Custom:CustomEntry/>
+                    <Custom:CustomEntry/>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Proceed" Style="{DynamicResource ButtonStyle}" Clicked="Button_Clicked" />
+            </StackLayout>
         </StackLayout>
-        <StackLayout>
-            <Custom:CustomEntry/>
-        </StackLayout>
-        <StackLayout>
-            <Custom:CustomEntry/>
-        </StackLayout>
-        <StackLayout>
-            <Custom:CustomEntry/>
-        </StackLayout>
-        <Button  Text="Proceed" />
     </StackLayout>
     <!--<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
         <StackLayout Padding="30,30,30,20" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">

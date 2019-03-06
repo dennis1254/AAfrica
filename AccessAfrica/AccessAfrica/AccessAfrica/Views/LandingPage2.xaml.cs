@@ -19,7 +19,7 @@ namespace AccessAfrica.Views
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PersonalDetails());
+            await Navigation.PushAsync(new Login());
         }
 
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)

@@ -100,6 +100,8 @@
     <BundleResource Include="Resources\Effra_Bold.ttf" />
     <BundleResource Include="Resources\Effra_Medium.ttf" />
     <BundleResource Include="Resources\Effra_Medium_Italic.ttf" />
+    <BundleResource Include="Resources\Montserrat-Bold.ttf" />
+    <BundleResource Include="Resources\Montserrat-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
