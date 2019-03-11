@@ -787,8 +787,8 @@ int drawable design_ic_visibility_off 0x7f02005f
 int drawable design_password_eye 0x7f020060
 int drawable design_snackbar_background 0x7f020061
 int drawable down 0x7f020062
-int drawable download 0x7f020063
-int drawable ic_arrow_drop_down 0x7f020064
+int drawable dropdown 0x7f020063
+int drawable gh 0x7f020064
 int drawable ic_audiotrack_dark 0x7f020065
 int drawable ic_audiotrack_light 0x7f020066
 int drawable ic_dialog_close_dark 0x7f020067

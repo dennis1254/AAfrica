@@ -35,7 +35,7 @@ namespace AccessAfrica.Droid.CustomRenderers
             {
                Control.SetBackgroundResource(Android.Resource.Color.Transparent);
 
-                Control.Gravity = GravityFlags.CenterHorizontal;
+                //Control.Gravity = GravityFlags.CenterHorizontal;
 
             }
         }

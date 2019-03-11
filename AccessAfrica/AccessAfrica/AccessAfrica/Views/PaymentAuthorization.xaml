@@ -2,7 +2,11 @@
 <ContentPage  NavigationPage.HasNavigationBar="False"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AccessAfrica.Views.PaymentAuthorization">
+              xmlns:Controls="clr-namespace:AccessAfrica.Controls"
+              x:Class="AccessAfrica.Views.PaymentAuthorization">
+    <StackLayout>
+        <Controls:CustomNav NavTitle="Payment Authorization" />
+    </StackLayout>
 
     
 </ContentPage>

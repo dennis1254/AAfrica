@@ -6,19 +6,17 @@
              xmlns:Controls="clr-namespace:AccessAfrica.Controls"
              x:Class="AccessAfrica.Views.PersonalDetails2">
     <StackLayout Orientation="Vertical">
-        <Controls:CustomNav/>
+        <Controls:CustomNav />
         <StackLayout Orientation="Vertical"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="40" Padding="30" BackgroundColor="#FFFFFF">
             <ScrollView VerticalScrollBarVisibility="Never">
                 <StackLayout VerticalOptions="StartAndExpand" Padding="0,10,0,0" Spacing="40">
-                    <Controls:CustomEntry IsEnabled="False" BackgroundColor="#F4F4F4"/>
+                    <Controls:CustomEntry IsEnabled="False" EntryBackgroundColor="#F4F4F4" />
                     <Controls:CustomEntry/>
                     <Controls:CustomEntry/>
                     <Controls:CustomEntry/>
                 </StackLayout>
             </ScrollView>
-            <StackLayout VerticalOptions="EndAndExpand">
-                <Button Text="Proceed" Style="{DynamicResource ButtonStyle}" Clicked="Button_Clicked" />
-            </StackLayout>
+            <Controls:CustomButton ButtonClicked="Button_Clicked"/>
         </StackLayout>
     </StackLayout>
     <!--<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">

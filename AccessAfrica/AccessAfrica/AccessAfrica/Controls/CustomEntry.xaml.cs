@@ -25,6 +25,12 @@ namespace AccessAfrica.Controls
             set => entryLabel.Text = value;
         }
 
+        public Color EntryBackgroundColor
+        {
+            get => mainFrame.BackgroundColor;
+            set => mainFrame.BackgroundColor = value;
+        }
+
 
         public CustomEntry()
         {

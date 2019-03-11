@@ -10,10 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AccessAfrica.Controls
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CustomNav : ContentView
+	public partial class CustomNav 
 	{
-        public event EventHandler BackTapped;
-
+       
         public string NavTitle
         {
             get => navTitle.Text ;
@@ -24,9 +23,10 @@ namespace AccessAfrica.Controls
 			InitializeComponent ();
 		}
 
-        private  void Back_Tapped(object sender, EventArgs e)
+        private async  void Back_Tapped(object sender, EventArgs e)
         {
-            BackTapped.Invoke(this, e);
+            // BackTapped.Invoke(this, e);
+            await Navigation.PopAsync();
         }
     }
 }

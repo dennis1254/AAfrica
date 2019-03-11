@@ -3,17 +3,22 @@
     NavigationPage.HasNavigationBar="False"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AccessAfrica.Views.AlmostThere">
+    xmlns:Control="clr-namespace:AccessAfrica.Controls"
+    x:Class="AccessAfrica.Views.AlmostThere">
     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFFFF" Spacing="15">
         <StackLayout BackgroundColor="#001e5a" Padding="5"/>
-        <StackLayout Padding="30,30,30,20" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
+        <StackLayout Padding="30,30,30,20" Spacing="40" BackgroundColor="#FFFFFF" VerticalOptions="FillAndExpand" Orientation="Vertical">
             <StackLayout Padding="0,0,0,0" Orientation="Vertical" VerticalOptions="StartAndExpand">
                 <Label Text="Almost there,"  FontSize="32" FontAttributes="Bold"          
                 HorizontalOptions="StartAndExpand" TextColor="#001e5a"
                    />
                 <Label Margin="0,0,0,15" FontSize="20" Text="Choose a username to get started" TextColor="#001e5a"/>
             </StackLayout>
-            <StackLayout Padding="0,0,0,5">
+            <StackLayout Spacing="30">
+                <Control:CustomEntry NewLabel="Username" NewPlaceHolder="Input Username"/>
+                <Control:CustomEntry NewLabel="Password" NewPlaceHolder="Input Password"/>
+            </StackLayout>
+            <!--<StackLayout Padding="0,0,0,5">
                 <Frame Margin="0,0,0,0" HorizontalOptions="FillAndExpand" CornerRadius="4" Padding="12" HasShadow="False" OutlineColor="#c5c5c5" BackgroundColor="#FFFFFF">
                     <StackLayout>
                         <Entry Placeholder="Input Username"  FontSize="19"  TextColor="#000000"/>
@@ -34,7 +39,7 @@
                         <Label Text="Password" FontSize="14"  TextColor="#363636" />
                     </StackLayout>
                 </StackLayout>
-            </StackLayout>
+            </StackLayout>-->
 
 
             <StackLayout VerticalOptions="EndAndExpand">

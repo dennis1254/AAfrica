@@ -10,21 +10,21 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Image Aspect="AspectFit" Grid.Column="0" HorizontalOptions="Start" HeightRequest="15.6" WidthRequest="30">
+                <Image x:Name="countryFlag" Aspect="AspectFit" Grid.Column="0" HorizontalOptions="Start" HeightRequest="15.6" WidthRequest="30">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="Flag" Tapped="Flag_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Picker 
-                    x:Name="flagPicker"
+                <Picker SelectedIndexChanged="Picker_SelectedIndexChanged" 
+                    x:Name="picker"
                 Grid.Column ="1"
                 Grid.ColumnSpan="2"
                 VerticalOptions="Center"    
-                Title="Canada"
+                Title="Select Country"
                 Style="{DynamicResource PickerStyle}"
                 HorizontalOptions="FillAndExpand"
                 />
-                <Image Aspect="AspectFit" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="4" WidthRequest="8"/>
+                <Image Aspect="AspectFit" Grid.Column="2" Source="dropdown" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="4" WidthRequest="8"/>
             </Grid>
         </Frame>
         <Grid Style="{DynamicResource TitlePositionStyle}">

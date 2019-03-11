@@ -4668,10 +4668,10 @@ namespace AccessAfrica.Droid
 			public const int Down = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int download = 2130837603;
+			public const int dropdown = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_arrow_drop_down = 2130837604;
+			public const int gh = 2130837604;
 			
 			// aapt resource value: 0x7f020065
 			public const int ic_audiotrack_dark = 2130837605;

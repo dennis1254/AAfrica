@@ -16,5 +16,6 @@ namespace AccessAfrica.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+    }
 }

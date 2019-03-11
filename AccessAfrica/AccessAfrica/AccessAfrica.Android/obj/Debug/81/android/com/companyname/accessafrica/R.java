@@ -3218,8 +3218,8 @@ containing a value of this type.
         public static final int design_password_eye=0x7f020060;
         public static final int design_snackbar_background=0x7f020061;
         public static final int down=0x7f020062;
-        public static final int download=0x7f020063;
-        public static final int ic_arrow_drop_down=0x7f020064;
+        public static final int dropdown=0x7f020063;
+        public static final int gh=0x7f020064;
         public static final int ic_audiotrack_dark=0x7f020065;
         public static final int ic_audiotrack_light=0x7f020066;
         public static final int ic_dialog_close_dark=0x7f020067;

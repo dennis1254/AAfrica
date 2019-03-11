@@ -21,5 +21,7 @@ namespace AccessAfrica.Views
         {
             await Navigation.PushAsync(new PayoutMethod(),true);
         }
+
+       
     }
 }

@@ -1,11 +1,12 @@
-﻿using AccessAfrica.Models;
+﻿using AccessAfrica.Controls;
+using AccessAfrica.Models;
+using AccessAfrica.Services;
 using AccessAfrica.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,75 +15,66 @@ namespace AccessAfrica.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SendMoney : ContentPage
 	{
-        private IList<Currency> _getCurrencies;
-        private IList<Currency> _getCountries;
+        
+        //private IList<Country> _getCountries;
 
         public SendMoney ()
 		{
 			InitializeComponent ();
 
-            _getCurrencies = GetCurrencies();
-
-            _getCountries = GetCountries();
-
-            foreach (var currency in _getCurrencies)
-                picker.Items.Add(currency.Name);
-
-            foreach (var currency in _getCurrencies)
-                picker3.Items.Add(currency.Name);
-
-            foreach (var country in _getCountries)
-                flagPicker.Items.Add(country.Name);
-
+            BindingContext = new EntryAndPickerViewModel();
+           
 
         }
 
-        //country
-        private IList<Currency> GetCountries()
-        {
-            return new List<Currency>
-            {
-                new Currency{Name = "Nigeria" , Image="NGN.png"},
-                new Currency{Name = "Ghana" , Image="NGN.png"}
-            };
-        }
+       
 
         private void FlagPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var name = flagPicker.Items[flagPicker.SelectedIndex];
-            var selectedCurreny = GetCountries().Single(x => x.Name == name);
-            imageSource2.Source = selectedCurreny.Image;
+           // var name = flagPicker.Items[flagPicker.SelectedIndex];
+           // var selectedCountry = GetCountries().Single(x => x.Name == name);
+            //imageSource2.Source = selectedCountry.Image;
         }
 
 
         //currency List
-        private IList<Currency> GetCurrencies()
-        {
-            return new List<Currency>
-            {
-                new Currency{Name = "NGN" , Image="NGN.png"},
-                new Currency{Name = "USD" , Image="NGN.png"}
-            };
-        }
 
-        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var name = picker.Items[picker.SelectedIndex];
-            var selectedCurreny = GetCurrencies().Single(x => x.Name == name);
-            imageSource.Source = selectedCurreny.Image;
-            
-        }
+        //private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var currency = picker.Items[picker.SelectedIndex];
+        //    var selectedCurrency = GetCountries().Single(x => x.Currency == currency);
+        //    imageSource.Source = selectedCurrency.Image;
+
+
+        //}
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            flagPicker.Focus();
+           // flagPicker.Focus();
         }
 
-        private void Picker3_SelectedIndexChanged(object sender, EventArgs e)
+        private void EntryAndPickerControl_NewSelectedIndex(object sender, EventArgs e)
         {
-            var name = picker3.Items[picker3.SelectedIndex];
-            var selectedCurrency = GetCurrencies().Single(x => x.Name == name);
-            imageSource3.Source = selectedCurrency.Image;
+           
         }
+
+        private void EntryAndPickerControl_ArrowTapped(object sender, EventArgs e)
+        {
+            picker1.NewPicker.Focus();
+            picker1.NewPicker.Unfocus();
+        }
+
+        private void EntryAndPickerControl_ArrowTapped_1(object sender, EventArgs e)
+        {
+            picker2.NewPicker.Focus();
+            picker2.NewPicker.Unfocus();
+        }
+
+        //private void Picker3_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var currency = picker3.Items[picker3.SelectedIndex];
+        //    var selectedCurrency = GetCountries().Single(x => x.Currency == currency );
+        //    imageSource3.Source = selectedCurrency.Image;
+        //}
     }
 }

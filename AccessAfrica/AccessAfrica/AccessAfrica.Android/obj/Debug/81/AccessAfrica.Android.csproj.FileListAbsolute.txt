@@ -158,10 +158,7 @@ C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAf
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\mipmap-xxxhdpi\icon.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\ic_arrow_drop_down.png.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\ae.png
-C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\download.png
-C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\ngn.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\intro.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\accessintro.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-hdpi\accessintro.png
@@ -259,6 +256,12 @@ C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAf
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-hdpi\accessafrica.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-xhdpi\accessafrica.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-xxhdpi\accessafrica.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\dropdown.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-hdpi\dropdown.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-xhdpi\dropdown.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable-xxhdpi\dropdown.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\ngn.png
+C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\res\drawable\gh.png
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica\bin\Debug\netstandard2.0\AccessAfrica.dll
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\bin\Debug\AccessAfrica.dll.mdb
 C:\Users\Owhiroro Dennis\source\repos\AAfrica\AccessAfrica\AccessAfrica\AccessAfrica.Android\obj\Debug\81\linksrc\AccessAfrica.dll.mdb

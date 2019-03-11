@@ -14,7 +14,7 @@ namespace AccessAfrica.Controls {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Controls\\CustomNav.xaml")]
-    public partial class CustomNav : global::Xamarin.Forms.ContentView {
+    public partial class CustomNav : global::Xamarin.Forms.StackLayout {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label navTitle;

@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView 
+
+   
+<StackLayout
     xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AccessAfrica.Controls.CustomNav">
-    <Grid HorizontalOptions="FillAndExpand"  VerticalOptions="StartAndExpand" BackgroundColor="{DynamicResource AccessDarkBlue}" Padding="5,15,0,15" HeightRequest="30">
-        <Grid >
-            <Grid Grid.Column="0">
-                <Label x:Name="navTitle" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" Text="Personal Details" FontAttributes="Bold" TextColor="#FFFFFF" />
-            </Grid>
-            <Grid Grid.Column="0"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" >
-                <Image  Source="Backbutton.png" />
-                <Label Grid.Column="1" Text="Back" TextColor="#FFFFFF" VerticalOptions="Center" />
-                <Grid.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Back_Tapped"/>
-                </Grid.GestureRecognizers>
-            </Grid>
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="AccessAfrica.Controls.CustomNav"
+    HorizontalOptions="FillAndExpand"  VerticalOptions="StartAndExpand" BackgroundColor="{DynamicResource AccessDarkBlue}" Padding="5,15,0,15" HeightRequest="30">
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid Grid.Column="0">
+            <Label x:Name="navTitle" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" Text="Personal Details" FontAttributes="Bold" TextColor="#FFFFFF" />
+        </Grid>
+        <Grid Grid.Column="0"   VerticalOptions="Center" HorizontalOptions="StartAndExpand" >
+            <Image  Source="Backbutton.png" />
+            <Label Grid.Column="1" Text="Back" TextColor="#FFFFFF" VerticalOptions="Center" />
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Back_Tapped"/>
+            </Grid.GestureRecognizers>
         </Grid>
     </Grid>
+</StackLayout>
 
   
-</ContentView>

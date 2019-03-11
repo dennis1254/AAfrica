@@ -25,9 +25,6 @@ namespace AccessAfrica.Views
            await Navigation.PushAsync(new PersonalDetails2(),true);
         }
 
-        private async void CustomNav_BackTapped(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
+      
     }
 }
